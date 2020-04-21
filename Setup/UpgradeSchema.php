@@ -19,7 +19,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
     {
         $setup->startSetup();
 
-        if (version_compare($context->getVersion(), '1.1.0', '<=')) {
+        if (version_compare($context->getVersion(), '1.0.0', '<=')) {
             $setup->getConnection()->addColumn(
                 $setup->getTable( 'customer_group'),
                     'allowed_payment_methods',

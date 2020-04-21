@@ -1,7 +1,7 @@
 {
-    "name": "sharpMonks/paymentfilter",
-    "license": "",
-    "description": "Providing config for migration",
+    "name": "sharpMonks/module-payment-filter",
+    "license": "OSL-3.0",
+    "description": "SharpMonks Magento 2 paymentFilter Extensions for Products, Customers and Customer Groups",
     "config": {
         "sort-packages": true
     },
@@ -17,5 +17,5 @@
             "SharpMonks\\PaymentFilter\\": ""
         }
     },
-    "version": "1.1.0"
+    "version": "1.0.0"
 }
