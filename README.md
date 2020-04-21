@@ -37,7 +37,9 @@ To fix the error, execute the following SQL:
 
 # Maintainer
 
-If you have ideas for improvements or find bugs, please send them to sharpmonks.official@gmail.com, with SharpMonks_PaymentFilter as part of the subject line.
+If you have ideas for improvements or find bugs, submit here: https://github.com/sharpmonks/paymentFilter/issues
+
+Create pull requests and I'll review them to approve for merge.
 # License
 
 This module is licensed under OSL-3.0
