@@ -5,6 +5,7 @@ This module enables you to select which payment methods are available for every 
 
 A customer can only use the payment methods during checkout available to his (customer group OR himself) AND not disabled for the products in the shopping cart.
 
+This module is the M2 version of this M1 module https://github.com/riconeitzel/PaymentFilter 
 # Compatibility
 This extension supports Magento 2.2.x and 2.3.x.
 
