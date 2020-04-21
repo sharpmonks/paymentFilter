@@ -1,5 +1,5 @@
 {
-    "name": "sharpMonks/module-payment-filter",
+    "name": "sharpmonks/module-payment-filter",
     "license": "OSL-3.0",
     "description": "SharpMonks Magento 2 paymentFilter Extensions for Products, Customers and Customer Groups",
     "config": {

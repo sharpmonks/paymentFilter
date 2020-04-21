@@ -19,7 +19,7 @@ The default for products is to allow ALL payment methods, so you only have to co
 The whole extension can be disabled in "Stores > Configuration > Sales > Checkout" on a Global or Website scope.
 
 # Composer Installation
-> composer require sharpMonks/module-payment-filter
+> composer require sharpmonks/module-payment-filter
  
 # Uninstall
 
