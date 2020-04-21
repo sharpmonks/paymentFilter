@@ -16,11 +16,11 @@ You can do that in the admin interface under Customers > Customer Groups. The de
 
 The default for products is to allow ALL payment methods, so you only have to configure the payment methods available to every group. Only change the product level payment method configuration if you want to disable one or more payment method for a specific products.
 # Disable Extension
+The whole extension can be disabled in "Stores > Configuration > Sales > Checkout" on a Global or Website scope.
 
 # Composer Installation
 > composer require sharpMonks/module-payment-filter
  
-The whole extension can be disabled in "Stores > Configuration > Sales > Checkout" on a Global or Website scope.
 # Uninstall
 
 If you ever uninstall the extension (I don't hope so :)) your site will be broken, because Magento doesn't support database updates on uninstalls to remove attributes.
@@ -28,8 +28,10 @@ If you ever uninstall the extension (I don't hope so :)) your site will be broke
 To fix the error, execute the following SQL:
 
 >DELETE FROM `eav_attribute` WHERE attribute_code = 'product_payment_methods';
->DELETE FROM `setup` WHERE code = 'payfilter_setup';
->ALTER TABLE `customer_group` DROP `allowed_payment_methods`;
+
+>>DELETE FROM `setup` WHERE code = 'payfilter_setup';
+
+>>ALTER TABLE `customer_group` DROP `allowed_payment_methods`;
 
 >IMPORTANT! Then clear the magento cache.
 
