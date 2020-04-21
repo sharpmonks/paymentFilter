@@ -11,7 +11,7 @@ use SharpMonks\PaymentFilter\Helper\Data;
 /**
  * Class catalogProductSaveBefore
  */
-class catalogProductSaveBefore implements ObserverInterface
+class CatalogProductSaveBefore implements ObserverInterface
 {
     /**
      * @var Http

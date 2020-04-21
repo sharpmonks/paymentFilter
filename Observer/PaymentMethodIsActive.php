@@ -9,7 +9,7 @@ use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Store\Model\StoreManagerInterface;
 use SharpMonks\PaymentFilter\Helper\Data;
 
-class paymentMethodIsActive implements ObserverInterface
+class PaymentMethodIsActive implements ObserverInterface
 {
     /**
      * @var StoreManagerInterface

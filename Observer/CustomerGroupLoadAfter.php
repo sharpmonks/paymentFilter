@@ -8,7 +8,7 @@ use Magento\Framework\Exception\NoSuchEntityException;
 use SharpMonks\PaymentFilter\Helper\Data;
 use Magento\Framework\Serialize\Serializer\Json;
 
-class customerGroupLoadAfter implements ObserverInterface
+class CustomerGroupLoadAfter implements ObserverInterface
 {
     /**
      * @var Data

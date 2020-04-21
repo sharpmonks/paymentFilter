@@ -11,7 +11,7 @@ use Magento\Store\Model\StoreManagerInterface;
 use Magento\Framework\Serialize\Serializer\Json;
 use SharpMonks\PaymentFilter\Helper\Data;
 
-class customerGroupSaveBefore implements ObserverInterface
+class CustomerGroupSaveBefore implements ObserverInterface
 {
     /**
      * @var StoreManagerInterface
