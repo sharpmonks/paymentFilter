@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <extension_attributes for="Magento\Customer\Api\Data\GroupInterface">
+        <attribute code="allowed_payment_methods" type="string">
+            <resources>
+                <resource ref="SharpMonks_PaymentFilter::apm"/>
+            </resources>
+            <join reference_table="customer_group" reference_field="customer_group_id" join_on_field="customer_group_id">
+                <field column="allowed_payment_methods">code</field>
+            </join>
+        </attribute>
+    </extension_attributes>
+</config>

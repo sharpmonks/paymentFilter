@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="checkout" translate="label">
+            <group id="payfilter" type="text" sortOrder="150" showInDefault="1" showInWebsite="1" showInStore="0" translate="label">
+                <label>Payment Methods Filter</label>
+                <field id="disable_ext" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Disable Payment Filter Extension</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <config_path>checkout/payfilter/disable_ext</config_path>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

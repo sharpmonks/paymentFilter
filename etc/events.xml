@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="customer_group_save_before">
+        <observer name="payfilter" instance="SharpMonks\PaymentFilter\Observer\customerGroupSaveBefore"/>
+    </event>
+    <event name="customer_group_load_after">
+        <observer name="payfilter" instance="SharpMonks\PaymentFilter\Observer\customerGroupLoadAfter"/>
+    </event>
+    <event name="payment_method_is_active">
+        <observer name="payfilter" instance="SharpMonks\PaymentFilter\Observer\paymentMethodIsActive"/>
+    </event>
+</config>

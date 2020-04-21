@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Block\Adminhtml\Group\Edit\Form">
+        <plugin name="add_form_field" sortOrder="1"
+                type="SharpMonks\PaymentFilter\Plugin\Form"/>
+    </type>
+    <type name="Magento\Customer\Model\GroupRegistry">
+        <plugin sortOrder="1" name="sharpMonksPaymentFilterGroupRegistry"
+                type="SharpMonks\PaymentFilter\Plugin\GroupRetrieve"/>
+    </type>
+</config>

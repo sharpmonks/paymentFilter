@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="customer_group_columns">
+        <column name="allowed_payment_methods" sortOrder="0">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Allowed Payment Methods</label>
+            </settings>
+        </column>
+    </columns>
+</listing>

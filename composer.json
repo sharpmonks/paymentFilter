@@ -1,0 +1,21 @@
+{
+    "name": "sharpMonks/paymentfilter",
+    "license": "",
+    "description": "Providing config for migration",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "magento/framework": "*"
+    },
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "SharpMonks\\PaymentFilter\\": ""
+        }
+    },
+    "version": "1.1.0"
+}
