@@ -1,11 +1,11 @@
 # SharpMonks PaymentFilter Magento2 Extension
-SharpMonks Magento2 paymentFilter Extensions for Products, Customers and Customer Groups
+SharpMonks Magento 2 paymentFilter Extensions for Products, Customers and Customer Groups
 
 This module enables you to select which payment methods are available for every customer and customer group. Also, Payment methods can be disabled for specific products. 
 
 A customer can only use the payment methods during checkout available to his (customer group OR himself) AND not disabled for the products in the shopping cart.
 
-This module is the M2 version of this M1 module https://github.com/riconeitzel/PaymentFilter 
+<b>This module is the Magento 2 version of this Magento 1 module</b> https://github.com/riconeitzel/PaymentFilter 
 # Compatibility
 This extension supports Magento 2.2.x and 2.3.x.
 
