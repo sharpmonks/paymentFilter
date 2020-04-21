@@ -7,7 +7,7 @@ A customer can only use the payment methods during checkout available to his (cu
 
 <b>This module is the Magento 2 version of this Magento 1 module</b> https://github.com/riconeitzel/PaymentFilter 
 # Compatibility
-This extension supports Magento 2.2.x and 2.3.x.
+>This extension supports Magento 2.2.x and 2.3.x.
 
 # Points to remember
 After installing this extension you have to configure the payment methods available to each customer group. 
@@ -17,6 +17,9 @@ You can do that in the admin interface under Customers > Customer Groups. The de
 The default for products is to allow ALL payment methods, so you only have to configure the payment methods available to every group. Only change the product level payment method configuration if you want to disable one or more payment method for a specific products.
 # Disable Extension
 
+# Composer Installation
+> composer require sharpMonks/module-payment-filter
+ 
 The whole extension can be disabled in "Stores > Configuration > Sales > Checkout" on a Global or Website scope.
 # Uninstall
 
@@ -24,13 +27,11 @@ If you ever uninstall the extension (I don't hope so :)) your site will be broke
 
 To fix the error, execute the following SQL:
 
-DELETE FROM `eav_attribute` WHERE attribute_code = 'product_payment_methods';
+>DELETE FROM `eav_attribute` WHERE attribute_code = 'product_payment_methods';
+>DELETE FROM `setup` WHERE code = 'payfilter_setup';
+>ALTER TABLE `customer_group` DROP `allowed_payment_methods`;
 
-DELETE FROM `setup` WHERE code = 'payfilter_setup';
-
-ALTER TABLE `customer_group` DROP `allowed_payment_methods`;
-
-IMPORTANT! Then clear the magento cache.
+>IMPORTANT! Then clear the magento cache.
 
 # Maintainer
 
