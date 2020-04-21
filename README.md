@@ -1,5 +1,5 @@
-# paymentFilter
-SharpMonks Magento2 paymentFilter Extensions
+# SharpMonks PaymentFilter Magento2 Extension
+SharpMonks Magento2 paymentFilter Extensions for Products, Customers and Customer Groups
 
 This module enables you to select which payment methods are available for every customer and customer group. Also, Payment methods can be disabled for specific products. 
 
@@ -24,7 +24,9 @@ If you ever uninstall the extension (I don't hope so :)) your site will be broke
 To fix the error, execute the following SQL:
 
 DELETE FROM `eav_attribute` WHERE attribute_code = 'product_payment_methods';
+
 DELETE FROM `setup` WHERE code = 'payfilter_setup';
+
 ALTER TABLE `customer_group` DROP `allowed_payment_methods`;
 
 IMPORTANT! Then clear the magento cache.
